@@ -6,7 +6,7 @@
   "main": "lib/index.css",
   "scripts": {
     "build": "lessc src/index.less > lib/canopy.css",
-    "watch": "watch 'npm run build' src",
+    "watch": "watch 'time npm run build' src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
