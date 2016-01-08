@@ -8,9 +8,8 @@
     &:last-of-type {
       margin-bottom: calc(@hexsize / 4);
     }
-    &.odd {
-    }
-    &.even {
+    &:nth-child(odd) {}
+    &:nth-child(even) {
       margin-left: calc(@hexsize / 4 * sqrt(3))
     }
     .hex {
@@ -46,9 +45,8 @@
     &:last-of-type {
       margin-right: calc(@hexsize / 4);
     }
-    &.odd {
-    }
-    &.even {
+    &:nth-child(odd) {}
+    &:nth-child(even) {
       margin-top: calc(@hexsize / 4 * sqrt(3));
     }
     .hex {
