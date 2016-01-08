@@ -1,0 +1,37 @@
+.hex-row-odd {
+  display: flex;
+}
+.hex-row-even {
+  display: flex;
+  margin-left: calc(100px / 4 * 1.73205080757)
+}
+.hex {
+  width: calc(100px / 4 * 2 * 1.73205080757);
+  height: calc(100px / 4 * 2);
+  margin-top: calc(100px / 4);
+}
+.black {
+  background-color: black;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.hex:before {
+  content: '';
+  position: absolute;
+  width: calc(100px / 4 * 2 * 1.73205080757);
+  height: calc(100px / 4 * 2);
+  background-color: inherit;
+  transform: rotate(60deg);
+}
+.hex:after {
+  content: '';
+  position: absolute;
+  width: calc(100px / 4 * 2 * 1.73205080757);
+  height: calc(100px / 4 * 2);
+  background-color: inherit;
+  transform: rotate(-60deg);
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Canopy",
+  "version": "0.0.0",
+  "description": "css components of hexagonal grid system",
+  "repository": "airtoxin/Canopy",
+  "main": "lib/index.css",
+  "scripts": {
+    "build": "lessc src/index.less > lib/canopy.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": ["css", "hex", "components", "grid"],
+  "author": "airtoxin <airtoxin@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/airtoxin/Canopy/issues"
+  },
+  "homepage": "https://github.com/airtoxin/Canopy#readme",
+  "devDependencies": {
+    "less": "^2.5.3"
+  }
+}
