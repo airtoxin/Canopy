@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hexagonal grid</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hex"></div>
+      <div class="hex red"></div>
+      <div class="hex blue"></div>
+    </div>
+  </body>
+  <style media="screen">
+    .container {
+      padding: 100px;
+      width: 500px;
+      height: 500px;
+    }
+    .hex {
+      width: calc(100px / 4 * 2 * 1.73205081);
+      height: calc(100px / 4 * 2);
+      background-color: black;
+      margin: 100px
+    }
+    .red {
+      background-color: red;
+    }
+    .blue {
+      background-color: blue;
+    }
+    .hex:before {
+      content: '';
+      position: absolute;
+      width: calc(100px / 4 * 2 * 1.73205081);
+      height: calc(100px / 4 * 2);
+      background-color: inherit;
+      transform: rotate(60deg);
+    }
+    .hex:after {
+      content: '';
+      position: absolute;
+      width: calc(100px / 4 * 2 * 1.73205081);
+      height: calc(100px / 4 * 2);
+      background-color: inherit;
+      transform: rotate(-60deg);
+    }
+  </style>
+</html>
