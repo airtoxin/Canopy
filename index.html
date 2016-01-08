@@ -5,23 +5,37 @@
     <title>Hexagonal grid</title>
   </head>
   <body>
-    <div class="container">
-      <div class="hex"></div>
+    <div class="hex-row-odd">
+      <div class="hex black"></div>
       <div class="hex red"></div>
       <div class="hex blue"></div>
     </div>
+    <div class="hex-row-even">
+      <div class="hex blue"></div>
+      <div class="hex black"></div>
+      <div class="hex red"></div>
+    </div>
+    <div class="hex-row-odd">
+      <div class="hex red"></div>
+      <div class="hex blue"></div>
+      <div class="hex black"></div>
+    </div>
   </body>
   <style media="screen">
-    .container {
-      padding: 100px;
-      width: 500px;
-      height: 500px;
+    .hex-row-odd {
+      display: flex;
+    }
+    .hex-row-even {
+      display: flex;
+      margin-left: calc(100px / 4 * 1.73205080757)
     }
     .hex {
-      width: calc(100px / 4 * 2 * 1.73205081);
+      width: calc(100px / 4 * 2 * 1.73205080757);
       height: calc(100px / 4 * 2);
+      margin-top: calc(100px / 4);
+    }
+    .black {
       background-color: black;
-      margin: 100px
     }
     .red {
       background-color: red;
@@ -32,7 +46,7 @@
     .hex:before {
       content: '';
       position: absolute;
-      width: calc(100px / 4 * 2 * 1.73205081);
+      width: calc(100px / 4 * 2 * 1.73205080757);
       height: calc(100px / 4 * 2);
       background-color: inherit;
       transform: rotate(60deg);
@@ -40,7 +54,7 @@
     .hex:after {
       content: '';
       position: absolute;
-      width: calc(100px / 4 * 2 * 1.73205081);
+      width: calc(100px / 4 * 2 * 1.73205080757);
       height: calc(100px / 4 * 2);
       background-color: inherit;
       transform: rotate(-60deg);
