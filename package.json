@@ -1,6 +1,6 @@
 {
   "name": "Canopy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "css components of hexagonal grid system",
   "repository": "airtoxin/Canopy",
   "main": "lib/index.css",
